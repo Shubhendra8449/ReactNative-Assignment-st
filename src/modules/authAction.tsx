@@ -18,7 +18,7 @@ const loginConfig = {
     'device_id': '1234',
     'offset': '1',
     'api_key': '1234',
-    'Authorization': 'Basic cmNjOnJjY0AxMjM='
+   
 
 
   }
