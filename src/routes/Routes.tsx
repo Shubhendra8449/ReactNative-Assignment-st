@@ -5,7 +5,9 @@ import DetailsScreen from "../screens/DetailScreen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import MainScreen from "../screens/MainScreen";
 import CounterScreen from "../screens/CounterScreen";
-import { CounterProvider } from "../utils/CounterContext";
+import ApiCallScreen from "../screens/ApiCallScreen";
+import LoginScreen from "../../sr/screens/LoginScreen";
+import Login from "../modules/screens/Login";
 
 
 
@@ -15,6 +17,9 @@ const Routes = () => {
   const [counter, setCounter] = useState(0)
   return (
 
+ 
+
+   
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Main">
         <Stack.Screen
@@ -29,6 +34,17 @@ const Routes = () => {
           component={DetailsScreen}
           options={{ headerShown: false }}
         />
+         <Stack.Screen
+          name="ApiCallScreen"
+          component={ApiCallScreen}
+          options={{ headerShown: false }}
+        />
+              <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+        />
+
 
       </Stack.Navigator>
     </NavigationContainer>

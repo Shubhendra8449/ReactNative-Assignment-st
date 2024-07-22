@@ -96,5 +96,66 @@ const profileStyles = StyleSheet.create({
 
 });
 
+const ApiStyles =StyleSheet.create({
+  container: {
+      flex: 1
+  },
+  FlatBoxContainer: {
+      paddingBottom: 20,
+      backgroundColor: 'grey',
+      borderColor: 'black',
+      borderWidth: 4,
+      borderRadius: 20,
+      margin: 20,
+      padding: 10, // Added padding to give some space inside the border
+    },
+    row: {
+      flexDirection: 'column',
+    },
+    image: {
+      height: 250,
+      borderRadius: 15,
+      marginRight: 10, // Adjusted margin to prevent overflow
+    },
+    textContainer: {
+      flexDirection: 'column',
+      flexShrink: 1, // Allows the text container to shrink if needed
+    },
+    name: {
+      color: 'black',
+      fontSize: 25,
+      alignItems:'center',
+    textAlign:'center',
+    marginHorizontal:20
+    },
+    detail: {
+      color: 'black',
+      fontSize: 15,
+      marginTop: 5,
+   
+    },
+    DetailButton: {
+      height: 40,
+      width: 150,
+      bottom:50,
+      borderRadius: 17,
+      backgroundColor: "green",
+      justifyContent: 'center',
+      alignItems: 'center',
+      alignSelf: "center", // Center horizontally
+  
+    },
+    placeholderContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+  },
+  placeholderText: {
+      fontSize: 18,
+      color: 'gray',
+      textAlign: 'center',
+  },
+});
 
-export { styles, profileStyles };
+
+export { styles, profileStyles,ApiStyles };

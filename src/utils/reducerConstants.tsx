@@ -1,0 +1,1 @@
+export const INCREASE_COUNTER="increase_counter";
